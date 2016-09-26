@@ -15,11 +15,17 @@ step 4 : http://54.224.53.177/mywelcome.php  click the URL to view the sample pa
 
 used the following script to install apache , php , git 
 
+
 #!/bin/bash
+
 yum update -y
+
 yum install httpd24 php56 git -y
+
 service httpd start
+
 chkconfig httpd on
+
 cd /var/www/html
 
 
